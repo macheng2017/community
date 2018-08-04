@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'path'
 
 module.exports = {
   // Node.js app
@@ -59,12 +59,12 @@ module.exports = {
   },
 
   mongodb: {
-    url: 'mongodb://127.0.0.1:27017/community'
+    url: 'mongodb://47.98.231.47:27017/community'
   },
 
   redis: {
-    host: '127.0.0.1',
-    port: 32768, //6379,
+    host: '47.98.231.47',
+    port: 6379, //6379,
     db: 0,
     password: ''
   },
@@ -84,10 +84,10 @@ module.exports = {
 
   github: {
     signinValid: true,
-    clientID: '',
-    clientSecret: '',
-    callbackURL: ''
+    clientID: '34400915100c5e0bd170',
+    clientSecret: '82d3692cc3674dac80ae5eca5179c18172566f45',
+    callbackURL: 'http://www.spzwl.com/callback'
   },
 
-  googleAnalytics: `your google analytics code`,
-};
+  googleAnalytics: `your google analytics code`
+}
