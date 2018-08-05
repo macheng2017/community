@@ -21,7 +21,7 @@
       "path": "/var/www/production/community",
       "ssh_options": "StrictHostKeyChecking=no",
       "post-deploy":
-        "npm && npm run build && pm2 startOrRestart ecosystem.json --env production",
+        "yarn && yarn run build && pm2 startOrRestart ecosystem.json --env production",
       "env": {
         "NODE_ENV": "production"
       }
@@ -34,7 +34,7 @@
       "path": "/var/www/development/community",
       "ssh_options": ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
       "post-deploy":
-        "npm && npm run build && pm2 startOrRestart ecosystem.json --env dev",
+        "yarn && yarn run build && pm2 startOrRestart ecosystem.json --env dev",
       "env": {
         "NODE_ENV": "staging"
       }
